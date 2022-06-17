@@ -10,9 +10,10 @@
 		02857342285B9EEC00A230C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02857341285B9EEC00A230C8 /* AppDelegate.swift */; };
 		02857344285B9EEC00A230C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02857343285B9EEC00A230C8 /* SceneDelegate.swift */; };
 		02857346285B9EEC00A230C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02857345285B9EEC00A230C8 /* ViewController.swift */; };
-		02857349285B9EEC00A230C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02857347285B9EEC00A230C8 /* Main.storyboard */; };
 		0285734B285B9EED00A230C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0285734A285B9EED00A230C8 /* Assets.xcassets */; };
 		0285734E285B9EED00A230C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0285734C285B9EED00A230C8 /* LaunchScreen.storyboard */; };
+		02857359285B9F1E00A230C8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02857358285B9F1E00A230C8 /* User.swift */; };
+		0285735F285BB76B00A230C8 /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285735E285BB76B00A230C8 /* TextInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +21,11 @@
 		02857341285B9EEC00A230C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02857343285B9EEC00A230C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		02857345285B9EEC00A230C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		02857348285B9EEC00A230C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0285734A285B9EED00A230C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0285734D285B9EED00A230C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0285734F285B9EED00A230C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02857358285B9F1E00A230C8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0285735E285BB76B00A230C8 /* TextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		02857340285B9EEC00A230C8 /* LearnUITextField */ = {
 			isa = PBXGroup;
 			children = (
-				02857341285B9EEC00A230C8 /* AppDelegate.swift */,
-				02857343285B9EEC00A230C8 /* SceneDelegate.swift */,
-				02857345285B9EEC00A230C8 /* ViewController.swift */,
-				02857347285B9EEC00A230C8 /* Main.storyboard */,
+				0285735D285BB72F00A230C8 /* View */,
+				02857357285B9F1200A230C8 /* Model */,
+				02857356285B9F0800A230C8 /* Controller */,
+				02857355285B9EFF00A230C8 /* App */,
 				0285734A285B9EED00A230C8 /* Assets.xcassets */,
 				0285734C285B9EED00A230C8 /* LaunchScreen.storyboard */,
 				0285734F285B9EED00A230C8 /* Info.plist */,
 			);
 			path = LearnUITextField;
+			sourceTree = "<group>";
+		};
+		02857355285B9EFF00A230C8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				02857341285B9EEC00A230C8 /* AppDelegate.swift */,
+				02857343285B9EEC00A230C8 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		02857356285B9F0800A230C8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				02857345285B9EEC00A230C8 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		02857357285B9F1200A230C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				02857358285B9F1E00A230C8 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0285735D285BB72F00A230C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0285735E285BB76B00A230C8 /* TextInput.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +162,6 @@
 			files = (
 				0285734E285B9EED00A230C8 /* LaunchScreen.storyboard in Resources */,
 				0285734B285B9EED00A230C8 /* Assets.xcassets in Resources */,
-				02857349285B9EEC00A230C8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02857359285B9F1E00A230C8 /* User.swift in Sources */,
 				02857346285B9EEC00A230C8 /* ViewController.swift in Sources */,
+				0285735F285BB76B00A230C8 /* TextInput.swift in Sources */,
 				02857342285B9EEC00A230C8 /* AppDelegate.swift in Sources */,
 				02857344285B9EEC00A230C8 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +183,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		02857347285B9EEC00A230C8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				02857348285B9EEC00A230C8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0285734C285B9EED00A230C8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -285,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LearnUITextField/LearnUITextField.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RQ3628489F;
@@ -292,7 +321,7 @@
 				INFOPLIST_FILE = LearnUITextField/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,7 +333,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,6 +342,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LearnUITextField/LearnUITextField.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RQ3628489F;
@@ -320,7 +350,7 @@
 				INFOPLIST_FILE = LearnUITextField/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +362,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
