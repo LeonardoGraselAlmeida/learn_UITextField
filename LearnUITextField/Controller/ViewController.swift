@@ -29,7 +29,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let textField = TextInput()
         textField.delegate = self
         textField.textContentType = .name
-        textField.placeholder = "Digite seu nome"
+        textField.attributedPlaceholder = .init(string: "Digite seu nome", attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])
         
         return textField
     }()
@@ -39,7 +39,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         textField.delegate = self
         textField.isSecureTextEntry = true
         textField.textContentType = .password
-        textField.placeholder = "Digite sua senha"
+        textField.attributedPlaceholder = .init(string: "Digite sua senha", attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])
         textField.autocapitalizationType = .none
         
         return textField
@@ -50,7 +50,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         textField.delegate = self
         textField.returnKeyType = .done
         textField.textContentType = .addressCity
-        textField.placeholder = "Digite seu endereço"
+        textField.attributedPlaceholder = .init(string: "Digite seu endereço", attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])
         
         return textField
     }()
@@ -59,6 +59,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = .purple
+        button.tintColor = .white
         button.setTitle("Cadastrar", for: .normal)
         button.isEnabled = false
         button.alpha = 0.5

@@ -22,8 +22,11 @@ class TextInput: UITextField {
         keyboardType = .default
         returnKeyType = .next
         font = .systemFont(ofSize: 18)
+        textColor = .black
+        
         autocorrectionType = .no
         clearButtonMode = .whileEditing
+        
         
         layer.borderWidth = 2
         layer.borderColor = UIColor.lightGray.cgColor
@@ -50,4 +53,15 @@ class TextInput: UITextField {
         let rect = super.editingRect(forBounds: bounds)
         return rect.inset(by: textPadding)
     }
+    
+    override func layoutSubviews() {
+            super.layoutSubviews()
+
+            for view in subviews {
+                if let button = view as? UIButton {
+                    button.setImage(button.image(for: .normal)?.withRenderingMode(.alwaysTemplate), for: .normal)
+                    button.tintColor = .black
+                }
+            }
+        }
 }
