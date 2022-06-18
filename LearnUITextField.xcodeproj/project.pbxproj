@@ -14,6 +14,9 @@
 		0285734E285B9EED00A230C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0285734C285B9EED00A230C8 /* LaunchScreen.storyboard */; };
 		02857359285B9F1E00A230C8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02857358285B9F1E00A230C8 /* User.swift */; };
 		0285735F285BB76B00A230C8 /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285735E285BB76B00A230C8 /* TextInput.swift */; };
+		029B4013285C32C300B40361 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 029B4011285C320E00B40361 /* GoogleService-Info.plist */; };
+		029B4016285CB8C700B40361 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029B4015285CB8C700B40361 /* FirestoreService.swift */; };
+		D8F512915BF4023D332DFCD6 /* Pods_LearnUITextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3781FC9494B121D61FEFEDD7 /* Pods_LearnUITextField.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		0285734F285B9EED00A230C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02857358285B9F1E00A230C8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0285735E285BB76B00A230C8 /* TextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
+		029B4011285C320E00B40361 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		029B4015285CB8C700B40361 /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		2121573C4DF9877E91B0B896 /* Pods-LearnUITextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnUITextField.release.xcconfig"; path = "Target Support Files/Pods-LearnUITextField/Pods-LearnUITextField.release.xcconfig"; sourceTree = "<group>"; };
+		3781FC9494B121D61FEFEDD7 /* Pods_LearnUITextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnUITextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB6E54AFBFB0296085DFDF7F /* Pods-LearnUITextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnUITextField.debug.xcconfig"; path = "Target Support Files/Pods-LearnUITextField/Pods-LearnUITextField.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8F512915BF4023D332DFCD6 /* Pods_LearnUITextField.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +51,11 @@
 		02857335285B9EEC00A230C8 = {
 			isa = PBXGroup;
 			children = (
+				029B4011285C320E00B40361 /* GoogleService-Info.plist */,
 				02857340285B9EEC00A230C8 /* LearnUITextField */,
 				0285733F285B9EEC00A230C8 /* Products */,
+				47BAB32570CD289772E33AEF /* Pods */,
+				FEE9C8619B895F97E75FBD5A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +70,11 @@
 		02857340285B9EEC00A230C8 /* LearnUITextField */ = {
 			isa = PBXGroup;
 			children = (
+				029B4014285CB18200B40361 /* Service */,
+				02857355285B9EFF00A230C8 /* App */,
 				0285735D285BB72F00A230C8 /* View */,
 				02857357285B9F1200A230C8 /* Model */,
 				02857356285B9F0800A230C8 /* Controller */,
-				02857355285B9EFF00A230C8 /* App */,
 				0285734A285B9EED00A230C8 /* Assets.xcassets */,
 				0285734C285B9EED00A230C8 /* LaunchScreen.storyboard */,
 				0285734F285B9EED00A230C8 /* Info.plist */,
@@ -102,6 +115,31 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		029B4014285CB18200B40361 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				029B4015285CB8C700B40361 /* FirestoreService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		47BAB32570CD289772E33AEF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB6E54AFBFB0296085DFDF7F /* Pods-LearnUITextField.debug.xcconfig */,
+				2121573C4DF9877E91B0B896 /* Pods-LearnUITextField.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FEE9C8619B895F97E75FBD5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3781FC9494B121D61FEFEDD7 /* Pods_LearnUITextField.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +147,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02857352285B9EED00A230C8 /* Build configuration list for PBXNativeTarget "LearnUITextField" */;
 			buildPhases = (
+				273D04421BF6A9BF7485FC6E /* [CP] Check Pods Manifest.lock */,
 				0285733A285B9EEC00A230C8 /* Sources */,
 				0285733B285B9EEC00A230C8 /* Frameworks */,
 				0285733C285B9EEC00A230C8 /* Resources */,
+				D96C73DF3AFC34AA7C5D1F2B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +200,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				029B4013285C32C300B40361 /* GoogleService-Info.plist in Resources */,
 				0285734E285B9EED00A230C8 /* LaunchScreen.storyboard in Resources */,
 				0285734B285B9EED00A230C8 /* Assets.xcassets in Resources */,
 			);
@@ -167,12 +208,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		273D04421BF6A9BF7485FC6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LearnUITextField-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D96C73DF3AFC34AA7C5D1F2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LearnUITextField/Pods-LearnUITextField-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LearnUITextField/Pods-LearnUITextField-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LearnUITextField/Pods-LearnUITextField-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0285733A285B9EEC00A230C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				02857359285B9F1E00A230C8 /* User.swift in Sources */,
+				029B4016285CB8C700B40361 /* FirestoreService.swift in Sources */,
 				02857346285B9EEC00A230C8 /* ViewController.swift in Sources */,
 				0285735F285BB76B00A230C8 /* TextInput.swift in Sources */,
 				02857342285B9EEC00A230C8 /* AppDelegate.swift in Sources */,
@@ -310,6 +394,7 @@
 		};
 		02857353285B9EED00A230C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB6E54AFBFB0296085DFDF7F /* Pods-LearnUITextField.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -339,6 +424,7 @@
 		};
 		02857354285B9EED00A230C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2121573C4DF9877E91B0B896 /* Pods-LearnUITextField.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
