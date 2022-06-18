@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 class ViewController: UIViewController, UITextFieldDelegate {
+    var db: Firestore!
+    
     lazy var stackView: UIStackView = {
         let stack = UIStackView()
         stack.translatesAutoresizingMaskIntoConstraints = false
@@ -72,6 +75,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configFirestore()
         configViews()
         configConstraints()
         configTarget()
@@ -152,13 +156,34 @@ extension ViewController {
         
         let user: User = User(name: name, password: password, address: address)
         print(user)
-        
+        setUser(with: user)
     }
     
+    private func setUser(with user: User) {
+        db.collection("users").addDocument(data: [
+            "name": user.name,
+            "password": user.password,
+            "address": user.address
+        ]) { err in
+            if let err = err {
+                print("Error writing document: \(err)")
+            } else {
+                print("Document successfully written!")
+            }
+        }
+    }
 }
+
+
 
 extension ViewController {
     // MARK: - Configs
+    private func configFirestore() {
+        let settings = FirestoreSettings()
+        Firestore.firestore().settings = settings
+        db = Firestore.firestore()
+    }
+    
     private func configViews() {
         view.backgroundColor = .black
         
