@@ -7,27 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		022C619F2864E7DA00229461 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022C619E2864E7DA00229461 /* Coordinator.swift */; };
+		022C61A12864E86300229461 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022C61A02864E86300229461 /* HomeCoordinator.swift */; };
+		022C61A42864F4C300229461 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022C61A32864F4C300229461 /* HomeView.swift */; };
+		022C61A72865016F00229461 /* ViewControllerDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022C61A62865016F00229461 /* ViewControllerDefault.swift */; };
 		02857342285B9EEC00A230C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02857341285B9EEC00A230C8 /* AppDelegate.swift */; };
 		02857344285B9EEC00A230C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02857343285B9EEC00A230C8 /* SceneDelegate.swift */; };
-		02857346285B9EEC00A230C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02857345285B9EEC00A230C8 /* ViewController.swift */; };
+		02857346285B9EEC00A230C8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02857345285B9EEC00A230C8 /* HomeViewController.swift */; };
 		0285734B285B9EED00A230C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0285734A285B9EED00A230C8 /* Assets.xcassets */; };
 		0285734E285B9EED00A230C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0285734C285B9EED00A230C8 /* LaunchScreen.storyboard */; };
 		02857359285B9F1E00A230C8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02857358285B9F1E00A230C8 /* User.swift */; };
-		0285735F285BB76B00A230C8 /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285735E285BB76B00A230C8 /* TextInput.swift */; };
+		0285735F285BB76B00A230C8 /* TextInputDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285735E285BB76B00A230C8 /* TextInputDefault.swift */; };
 		029B4013285C32C300B40361 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 029B4011285C320E00B40361 /* GoogleService-Info.plist */; };
 		D8F512915BF4023D332DFCD6 /* Pods_LearnUITextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3781FC9494B121D61FEFEDD7 /* Pods_LearnUITextField.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		022C619E2864E7DA00229461 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		022C61A02864E86300229461 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		022C61A32864F4C300229461 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		022C61A62865016F00229461 /* ViewControllerDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDefault.swift; sourceTree = "<group>"; };
 		0285733E285B9EEC00A230C8 /* LearnUITextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnUITextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02857341285B9EEC00A230C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02857343285B9EEC00A230C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		02857345285B9EEC00A230C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		02857345285B9EEC00A230C8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0285734A285B9EED00A230C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0285734D285B9EED00A230C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0285734F285B9EED00A230C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02857358285B9F1E00A230C8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		0285735E285BB76B00A230C8 /* TextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
+		0285735E285BB76B00A230C8 /* TextInputDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputDefault.swift; sourceTree = "<group>"; };
 		029B4011285C320E00B40361 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2121573C4DF9877E91B0B896 /* Pods-LearnUITextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnUITextField.release.xcconfig"; path = "Target Support Files/Pods-LearnUITextField/Pods-LearnUITextField.release.xcconfig"; sourceTree = "<group>"; };
 		3781FC9494B121D61FEFEDD7 /* Pods_LearnUITextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnUITextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,11 +54,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		022C619B2864E75400229461 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				022C61A52864FC3300229461 /* Infrastructure */,
+				022C619D2864E78000229461 /* Coordinator */,
+				02857357285B9F1200A230C8 /* Model */,
+				022C619C2864E77600229461 /* ViewControllers */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		022C619C2864E77600229461 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				022C61A22864E9F900229461 /* Home */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		022C619D2864E78000229461 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				022C619E2864E7DA00229461 /* Coordinator.swift */,
+				022C61A02864E86300229461 /* HomeCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		022C61A22864E9F900229461 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				02857345285B9EEC00A230C8 /* HomeViewController.swift */,
+				022C61A32864F4C300229461 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		022C61A52864FC3300229461 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				0285735D285BB72F00A230C8 /* Components */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
 		02857335285B9EEC00A230C8 = {
 			isa = PBXGroup;
 			children = (
-				029B4011285C320E00B40361 /* GoogleService-Info.plist */,
 				02857340285B9EEC00A230C8 /* LearnUITextField */,
+				022C619B2864E75400229461 /* Source */,
 				0285733F285B9EEC00A230C8 /* Products */,
 				47BAB32570CD289772E33AEF /* Pods */,
 				FEE9C8619B895F97E75FBD5A /* Frameworks */,
@@ -68,32 +121,14 @@
 		02857340285B9EEC00A230C8 /* LearnUITextField */ = {
 			isa = PBXGroup;
 			children = (
-				02857355285B9EFF00A230C8 /* App */,
-				0285735D285BB72F00A230C8 /* View */,
-				02857357285B9F1200A230C8 /* Model */,
-				02857356285B9F0800A230C8 /* Controller */,
-				0285734A285B9EED00A230C8 /* Assets.xcassets */,
-				0285734C285B9EED00A230C8 /* LaunchScreen.storyboard */,
-				0285734F285B9EED00A230C8 /* Info.plist */,
-			);
-			path = LearnUITextField;
-			sourceTree = "<group>";
-		};
-		02857355285B9EFF00A230C8 /* App */ = {
-			isa = PBXGroup;
-			children = (
 				02857341285B9EEC00A230C8 /* AppDelegate.swift */,
 				02857343285B9EEC00A230C8 /* SceneDelegate.swift */,
+				0285734A285B9EED00A230C8 /* Assets.xcassets */,
+				029B4011285C320E00B40361 /* GoogleService-Info.plist */,
+				0285734F285B9EED00A230C8 /* Info.plist */,
+				0285734C285B9EED00A230C8 /* LaunchScreen.storyboard */,
 			);
-			path = App;
-			sourceTree = "<group>";
-		};
-		02857356285B9F0800A230C8 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				02857345285B9EEC00A230C8 /* ViewController.swift */,
-			);
-			path = Controller;
+			path = LearnUITextField;
 			sourceTree = "<group>";
 		};
 		02857357285B9F1200A230C8 /* Model */ = {
@@ -104,12 +139,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		0285735D285BB72F00A230C8 /* View */ = {
+		0285735D285BB72F00A230C8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				0285735E285BB76B00A230C8 /* TextInput.swift */,
+				0285735E285BB76B00A230C8 /* TextInputDefault.swift */,
+				022C61A62865016F00229461 /* ViewControllerDefault.swift */,
 			);
-			path = View;
+			path = Components;
 			sourceTree = "<group>";
 		};
 		47BAB32570CD289772E33AEF /* Pods */ = {
@@ -245,9 +281,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				02857359285B9F1E00A230C8 /* User.swift in Sources */,
-				02857346285B9EEC00A230C8 /* ViewController.swift in Sources */,
-				0285735F285BB76B00A230C8 /* TextInput.swift in Sources */,
+				022C61A72865016F00229461 /* ViewControllerDefault.swift in Sources */,
+				02857346285B9EEC00A230C8 /* HomeViewController.swift in Sources */,
+				022C619F2864E7DA00229461 /* Coordinator.swift in Sources */,
+				0285735F285BB76B00A230C8 /* TextInputDefault.swift in Sources */,
 				02857342285B9EEC00A230C8 /* AppDelegate.swift in Sources */,
+				022C61A42864F4C300229461 /* HomeView.swift in Sources */,
+				022C61A12864E86300229461 /* HomeCoordinator.swift in Sources */,
 				02857344285B9EEC00A230C8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

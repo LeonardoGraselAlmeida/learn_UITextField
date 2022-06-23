@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TextInput: UITextField {
+class TextInputDefault: UITextField {
     let textPadding = UIEdgeInsets(
         top: 5,
         left: 10,
@@ -15,13 +15,18 @@ class TextInput: UITextField {
         right: 10
     )
     
-    func setup() {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        initDefault()
+    }
+    
+    func initDefault() {
         translatesAutoresizingMaskIntoConstraints = false
         backgroundColor = .white
         
         keyboardType = .default
         returnKeyType = .next
-        font = .systemFont(ofSize: 18)
+        font = .systemFont(ofSize: 18, weight: .regular)
         textColor = .black
         
         autocorrectionType = .no
@@ -34,24 +39,20 @@ class TextInput: UITextField {
         clipsToBounds = true
     }
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setup()
-    }
-    
     required public init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setup()
+        fatalError("init(coder:) has not been implemented")
     }
     
     override func textRect(forBounds bounds: CGRect) -> CGRect {
-        let rect = super.textRect(forBounds: bounds)
-        return rect.inset(by: textPadding)
+        return bounds.inset(by: textPadding)
+    }
+    
+    override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
+        return bounds.inset(by: textPadding)
     }
     
     override func editingRect(forBounds bounds: CGRect) -> CGRect {
-        let rect = super.editingRect(forBounds: bounds)
-        return rect.inset(by: textPadding)
+        return bounds.inset(by: textPadding)
     }
     
     override func layoutSubviews() {
